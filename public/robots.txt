@@ -1,0 +1,88 @@
+# robots.txt for 時の栞
+# https://www.robotstxt.org/
+
+# ─────────────────────────────────────────
+# General crawlers (search engines)
+# ─────────────────────────────────────────
+User-agent: *
+Allow: /
+
+# ─────────────────────────────────────────
+# AI training crawlers — disallow all
+# ─────────────────────────────────────────
+
+# OpenAI (ChatGPT training / browsing)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Google (Gemini / Bard AI training)
+User-agent: Google-Extended
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+# Common Crawl (used by many LLM training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# Meta AI / FacebookBot
+User-agent: FacebookBot
+Disallow: /
+
+# Bytedance / TikTok
+User-agent: Bytespider
+Disallow: /
+
+# Amazon Alexa / Applebot-Extended
+User-agent: Applebot-Extended
+Disallow: /
+
+# Diffbot
+User-agent: Diffbot
+Disallow: /
+
+# Omgili / Webzio
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# iFrame AI / Webz.io
+User-agent: webzio-extended
+Disallow: /
+
+# Scrapy (generic scraping framework)
+User-agent: Scrapy
+Disallow: /
+
+# AI2 (AllenAI)
+User-agent: AI2Bot
+Disallow: /
+
+# ─────────────────────────────────────────
+# Sitemap (optional, update URL when published)
+# ─────────────────────────────────────────
+# Sitemap: https://<your-github-username>.github.io/<repo-name>/sitemap.xml

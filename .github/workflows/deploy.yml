@@ -1,0 +1,65 @@
+name: GitHub Pages へデプロイ
+
+on:
+  push:
+    branches:
+      - main   # main ブランチへのプッシュで自動実行
+  workflow_dispatch: # 手動実行も可能にする
+
+# GitHub Pages への書き込み・OIDCトークン発行権限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時デプロイを1つに制限（キューは保持）
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # ────────────────────────────────
+  # 1. ビルド
+  # ────────────────────────────────
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: pnpm をセットアップ
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Node.js をセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: 依存関係をインストール
+        run: pnpm install --frozen-lockfile
+
+      - name: ビルド
+        run: pnpm run build
+        env:
+          # リポジトリ名を自動取得して GitHub Pages のベースパスに設定
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+
+      - name: GitHub Pages 用アーティファクトをアップロード
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  # ────────────────────────────────
+  # 2. デプロイ
+  # ────────────────────────────────
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: GitHub Pages へデプロイ
+        id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="時の栞 - 古書とスペシャルティコーヒーを楽しむブックカフェ。再会と継承をテーマに、落ち着いた空間で本との偶然の出会いを。">
+  <!-- AI学習・スクレイピング禁止 -->
+  <meta name="robots" content="noai, noimageai">
+  <meta name="googlebot" content="noai, noimageai">
+  <title>時の栞</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/logos/logo_2000x2000.png">
+</head>
+<body class="antialiased bg-washi">
+  <!-- ヘッダー -->
+  <header class="fixed top-0 w-full z-50 bg-gradient-to-b from-black/80 to-transparent transition-all duration-500 pt-6 pb-12 pointer-events-none">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="flex justify-between items-start">
+        <div class="text-2xl md:text-3xl font-bold text-white pointer-events-auto">
+          <a href="#" class="tracking-widest hover:opacity-80 transition-opacity">時の栞</a>
+        </div>
+        <!-- Right side empty as requested -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+    <!-- 背景画像 -->
+    <div class="absolute inset-0 z-0">
+      <img src="./assets/images/店内.png" alt="店内の様子" class="w-full h-full object-cover animate-fade-in-slow">
+      <div class="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent"></div>
+    </div>
+
+    <div class="container mx-auto px-6 md:px-12 relative z-10 w-full">
+      <div class="max-w-4xl text-left text-white/90">
+        <h1 class="text-7xl md:text-8xl lg:text-9xl font-bold mb-12 leading-none tracking-tight">
+          時の栞
+        </h1>
+
+        <div class="pl-2 border-l-2 border-white/30 ml-2">
+          <p class="text-2xl md:text-4xl mb-6 font-light leading-relaxed">
+            古書との偶然の出会い<br>
+            先人の知恵を次世代へ
+          </p>
+          <p class="text-lg md:text-xl text-white/80 font-light leading-loose max-w-xl">
+            古いものに新たな価値を見出す。<br>
+            手淹れコーヒーの香りに包まれた、<br>
+            落ち着いた時間をお過ごしください。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- スクロールダウン -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+      <span class="text-sm tracking-widest writing-vertical-rl">是より下へ</span>
+    </div>
+  </section>
+
+  <!-- コンセプトセクション -->
+  <section id="concept" class="py-32 relative">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="flex flex-col md:flex-row gap-16 items-center">
+        <!-- 縦書きテキスト -->
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end order-2 md:order-1">
+          <div class="writing-vertical-rl text-lg md:text-xl leading-loose tracking-widest text-vintage-dark h-[400px]">
+            <p class="mb-12">静かな時が流れる場所で、</p>
+            <p class="mb-12">一冊の本と巡り会う。</p>
+            <p>記憶と文化をつなぐ、再会の栞。</p>
+          </div>
+        </div>
+
+        <!-- コンセプト詳細 -->
+        <div class="w-full md:w-1/2 order-1 md:order-2">
+          <div class="max-w-md">
+            <h2 class="text-3xl font-bold mb-8 text-vintage-brown tracking-wider">再会と継承</h2>
+            <p class="text-lg leading-loose mb-6 text-vintage-dark">
+              当店は、古書の販売と手淹れスペシャルティコーヒーを提供するブックカフェです。
+            </p>
+            <p class="text-lg leading-loose text-vintage-dark">
+              店員は過度な干渉をせず、お客様の好奇心にお任せします。
+              昔風の落ち着いた空間で、誰にも邪魔されないひとときをお楽しみください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 今月のおすすめセクション (画像ドーン + 説明) -->
+  <section id="books" class="py-20 bg-vintage-brown/5 relative overflow-hidden">
+    <div class="container mx-auto px-4 md:px-12">
+      <!-- 今月の一冊 -->
+      <div class="flex flex-col md:flex-row items-stretch min-h-[600px] bg-white shadow-xl mx-0 md:mx-0 overflow-hidden rounded-sm mb-24">
+
+        <!-- 画像ドーン (左側) -->
+        <div class="w-full md:w-3/5 bg-vintage-dark relative min-h-[400px]">
+          <div class="absolute inset-0 bg-cover bg-center opacity-80 mix-blend-luminosity"
+               style="background-image: url('./assets/images/店内.png'); background-position: center;"></div>
+          <div class="absolute inset-0 bg-vintage-brown/20 mix-blend-overlay"></div>
+
+          <div class="absolute inset-8 border border-white/20"></div>
+
+          <div class="absolute bottom-8 left-8 text-white z-10">
+            <span class="block text-sm tracking-widest mb-2 border-b border-white/40 pb-1 w-max">今月の推薦図書</span>
+            <span class="text-4xl font-bold">今月の一冊</span>
+          </div>
+        </div>
+
+        <!-- 説明 (右側) -->
+        <div class="w-full md:w-2/5 p-12 md:p-16 flex flex-col justify-center bg-washi relative">
+          <div class="absolute top-0 right-0 p-4 text-vintage-brown/20 text-9xl font-serif select-none pointer-events-none opacity-20">本</div>
+
+          <h3 class="text-2xl md:text-3xl font-bold mb-2 text-vintage-dark">『夜の木』</h3>
+          <p class="text-vintage-brown mb-8 text-sm">タラ・ブックス</p>
+
+          <div class="w-12 h-0.5 bg-vintage-brown mb-8"></div>
+
+          <p class="text-lg leading-loose mb-8 text-vintage-dark/90 text-justify">
+            インドの小さな出版社が手作業で作る、美しい絵本。
+            手漉きの紙にシルクスクリーンで刷られた一枚一枚は、
+            まるで夜の森に迷い込んだような深い黒と鮮やかな色彩を放ちます。
+            手触りも含めて味わっていただきたい一冊です。
+          </p>
+
+          <p class="text-right text-lg text-vintage-brown mt-auto font-bold">三、五〇〇円</p>
+        </div>
+      </div>
+
+      <!-- 今月のおすすめ（甘味） -->
+      <div class="flex flex-col md:flex-row-reverse items-stretch min-h-[600px] bg-white shadow-xl mx-0 md:mx-0 overflow-hidden rounded-sm">
+
+        <!-- 画像ドーン (右側) -->
+        <div class="w-full md:w-3/5 bg-vintage-dark relative min-h-[400px]">
+          <div class="absolute inset-0 bg-cover bg-center opacity-90"
+               style="background-image: url('./assets/images/homemade-pudding.png'); background-position: center;"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-vintage-dark/60 to-transparent"></div>
+
+          <div class="absolute inset-8 border border-white/20"></div>
+
+          <div class="absolute bottom-8 right-8 text-white z-10 text-right">
+            <span class="block text-sm tracking-widest mb-2 border-b border-white/40 pb-1 ml-auto w-max">季節の甘味</span>
+            <span class="text-4xl font-bold">今月のおすすめ</span>
+          </div>
+        </div>
+
+        <!-- 説明 (左側) -->
+        <div class="w-full md:w-2/5 p-12 md:p-16 flex flex-col justify-center bg-washi relative">
+          <div class="absolute bottom-0 left-0 p-4 text-vintage-brown/20 text-9xl font-serif select-none pointer-events-none opacity-20">甘</div>
+
+          <h3 class="text-2xl md:text-3xl font-bold mb-2 text-vintage-dark">自家製あらかると</h3>
+          <p class="text-vintage-brown mb-8 text-sm">昔ながらの固め仕上げ</p>
+
+          <div class="w-12 h-0.5 bg-vintage-brown mb-8"></div>
+
+          <p class="text-lg leading-loose mb-8 text-vintage-dark/90 text-justify">
+            卵と牛乳、きび砂糖だけで作った素朴な味わい。
+            ほろ苦いカラメルソースが、珈琲の深みとよく合います。
+            少し固めの食感は、どこか懐かしい記憶を呼び覚ますようです。
+            読書のお供に、ぜひご賞味ください。
+          </p>
+
+          <p class="text-right text-lg text-vintage-brown mt-auto font-bold">四五〇円</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- メニューセクション (和風縦書きリスト強化) -->
+  <section id="menu" class="py-32 bg-vintage-paper relative">
+    <!-- 背景装飾 -->
+    <div class="absolute inset-0 opacity-5 pointer-events-none"
+         style="background-image: radial-gradient(#8B7355 1px, transparent 1px); background-size: 30px 30px;">
+    </div>
+
+    <div class="container mx-auto px-6 md:px-12 relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-center text-4xl font-bold mb-24 tracking-[0.5em] text-vintage-dark font-serif relative inline-block left-1/2 transform -translate-x-1/2">
+          <span class="relative z-10 bg-vintage-paper px-8">御品書</span>
+          <div class="absolute top-1/2 left-0 w-full h-[1px] bg-vintage-dark/30 -z-10 w-[150%] -left-[25%]"></div>
+        </h2>
+
+        <div class="flex flex-col md:flex-row justify-center gap-16 md:gap-32">
+          <!-- 珈琲 -->
+          <div class="bg-white/50 p-10 md:p-14 shadow-sm border border-vintage-brown/10 backdrop-blur-sm relative">
+            <div class="writing-vertical-rl h-[400px] text-vintage-dark mx-auto space-x-10 space-x-reverse">
+              <h3 class="text-2xl font-bold tracking-widest border-l border-vintage-brown/30 pl-4 ml-4 h-full flex items-center">珈琲・飲み物</h3>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">ブレンド珈琲</span>
+                <span class="text-sm self-end">六〇〇</span>
+              </div>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">日替わり珈琲</span>
+                <span class="text-sm self-end">七〇〇</span>
+              </div>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">カフェオレ</span>
+                <span class="text-sm self-end">六五〇</span>
+              </div>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">和紅茶</span>
+                <span class="text-sm self-end">五五〇</span>
+              </div>
+            </div>
+            <!-- 四隅のデザイン -->
+            <div class="absolute top-2 left-2 w-4 h-4 border-t border-l border-vintage-brown/40"></div>
+            <div class="absolute top-2 right-2 w-4 h-4 border-t border-r border-vintage-brown/40"></div>
+            <div class="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-vintage-brown/40"></div>
+            <div class="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-vintage-brown/40"></div>
+          </div>
+
+          <!-- 甘味・軽食 -->
+          <div class="bg-white/50 p-10 md:p-14 shadow-sm border border-vintage-brown/10 backdrop-blur-sm relative">
+            <div class="writing-vertical-rl h-[400px] text-vintage-dark mx-auto space-x-10 space-x-reverse">
+              <h3 class="text-2xl font-bold tracking-widest border-l border-vintage-brown/30 pl-4 ml-4 h-full flex items-center">甘味・軽食</h3>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">本日の焼き菓子</span>
+                <span class="text-sm self-end">五五〇</span>
+              </div>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">厚切りトースト</span>
+                <span class="text-sm self-end">五〇〇</span>
+              </div>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">手作りスコーン</span>
+                <span class="text-sm self-end">四〇〇</span>
+              </div>
+
+              <div class="flex flex-col justify-between py-2 text-lg tracking-wide hover:text-vintage-brown transition-colors cursor-default">
+                <span class="font-bold mb-4">自家製ぷりん</span>
+                <span class="text-sm self-end">四五〇</span>
+              </div>
+            </div>
+            <!-- 四隅のデザイン -->
+            <div class="absolute top-2 left-2 w-4 h-4 border-t border-l border-vintage-brown/40"></div>
+            <div class="absolute top-2 right-2 w-4 h-4 border-t border-r border-vintage-brown/40"></div>
+            <div class="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-vintage-brown/40"></div>
+            <div class="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-vintage-brown/40"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセスセクション -->
+  <section id="access" class="py-32 bg-vintage-dark text-vintage-cream relative">
+     <!-- 背景装飾 -->
+     <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-vintage-brown via-vintage-beige to-vintage-brown opacity-30"></div>
+
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
+        <div>
+          <h2 class="text-3xl font-bold mb-12 tracking-widest text-vintage-beige">店舗案内</h2>
+          <div class="space-y-8 text-lg font-light tracking-wide leading-loose border-l border-vintage-beige/20 pl-8">
+            <p>
+              <span class="block text-sm text-vintage-beige/50 mb-2 font-sans tracking-normal">住所</span>
+              〒601-9001<br>京都府京都市栞区土岐町11番地1
+            </p>
+            <p>
+              <span class="block text-sm text-vintage-beige/50 mb-2 font-sans tracking-normal">営業時間</span>
+              十一時 〜 十九時
+            </p>
+            <p>
+              <span class="block text-sm text-vintage-beige/50 mb-2 font-sans tracking-normal">定休日</span>
+              月曜日・火曜日
+            </p>
+            <p>
+              <span class="block text-sm text-vintage-beige/50 mb-2 font-sans tracking-normal">連絡先</span>
+              075-1110-0829
+            </p>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <!-- <div class="h-80 w-full bg-vintage-brown/10 border border-vintage-cream/10 flex flex-col items-center justify-center p-8 text-center relative overflow-hidden group">
+            <div class="absolute inset-0 bg-[url('/assets/images/map-pattern.svg')] opacity-5"></div>
+            <p class="text-2xl font-bold mb-2 z-10 tracking-widest">地図</p>
+            <p class="text-sm opacity-50 z-10 mb-4 font-light">Google Maps 読み込み</p>
+            <div class="border border-vintage-cream/30 px-6 py-2 text-xs opacity-60 z-10 group-hover:opacity-100 group-hover:bg-vintage-cream group-hover:text-vintage-dark transition-all duration-500 cursor-pointer">
+                地図を開く
+            </div>
+        </div> -->
+      </div>
+      <div class="text-center mt-24 opacity-40">
+        <p class="text-xs tracking-widest">&copy; 2026 時の栞</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター (削除してアクセスセクションに統合) -->
+
+  <style>
+    .writing-vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    }
+  </style>
+
+  <script type="module" src="/main.ts"></script>
+</body>
+</html>

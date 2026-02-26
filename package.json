@@ -1,0 +1,33 @@
+{
+  "name": "toki-no-shiori",
+  "version": "1.0.0",
+  "description": "25年度4QプロN応用「時の栞」用Webサイト",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,html,css}\""
+  },
+  "keywords": [
+    "bookstore",
+    "cafe",
+    "website"
+  ],
+  "author": "YukiShima1010",
+  "packageManager": "pnpm@10.30.2",
+  "devDependencies": {
+    "@types/node": "^20.19.34",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^8.57.1",
+    "postcss": "^8.5.6",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}
